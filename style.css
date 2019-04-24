@@ -12,17 +12,19 @@ body
 
 .top-nav-bar 
 {
-    height: 57px;
+    height: 53px;
     top: 0;
     position: sticky;
     background: #fff;
+    border-bottom: 2px solid #30638E;
     margin-bottom: 20px;
     z-index: 2;
 }
 .logo 
 {
-    height: 32px;
+    height: 45px;
     margin: 5px 10px;
+    z-index: -1;
 }
 
 .form-control
@@ -42,6 +44,7 @@ body
     background: orange;
     border: 1px solid orange;
     margin: 8.5px 10px 3px 0;
+    height: 39px;
     border-top-left-radius: 0px !important;
     border-bottom-left-radius: 0px !important;
     border-top-right-radius: 20px !important;
@@ -59,3 +62,165 @@ body
 {
     color: #fff;
 }
+
+.menu-bar
+{
+    width: 40%;
+    height: 57px;
+    float: right;
+    padding: 5px 10px;
+}
+
+.menu-bar ul 
+{
+    display: inline-flex;
+    float: right;
+}
+
+.menu-bar ul li {
+    border-left: 1px solid #fff;
+    list-style-type: none;
+    padding: 10px 35px;
+    text-align: center;
+    background-color: #30638E;
+}
+
+.menu-bar ul li a {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.fa-shopping-basket {
+    margin-right: 7px;
+    align-self: center;
+}
+
+@media only screen and (max-width: 980px)
+{
+    .top-nav-bar
+    {
+        height: 118px;
+        border-bottom: 0;
+        
+    }
+   
+    .search-box 
+    {
+        width: 100%;
+    }
+    .menu-bar ul
+    {
+        float:right;
+        margin-right: 2%;
+    }
+
+    .menu-bar ul 
+    {
+        margin: 10px 0;
+        width: 100%;
+    }
+
+    .menu-bar ul li
+    {
+        height:57px;
+        width: 100%;
+    }
+}
+
+.side-menu
+{
+    height: 79%;
+    width: 18%;
+    float: left;
+    font-size: 15px;
+    z-index: 2;
+    background-color:#30638E; 
+}
+
+.side-menu ul
+{
+    margin-left: 10px;
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+    height: 900px;
+}
+.side-menu ul li
+{
+    list-style-type: none;
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+
+}
+.side-menu ul li:hover 
+{
+    color: orange;
+}
+
+.side-menu ul li ul
+{
+    display: none;
+    z-index: 10;
+    top: 7px;
+}
+
+.side-menu ul li:hover ul
+{
+    display: block;
+    height: 400px;
+    margin-left: 14%;
+    padding: 10px 50px 10px 25px;
+    position: fixed;
+    background: #ececec;
+    box-shadow: 2px 2px 4px 1px rgba(0,0,0,0.5);
+    margin-top: 50px;
+    color: rgb(151, 151, 151);
+}
+
+.side-menu ul li ul li:hover
+{
+    padding-bottom: 50px;
+}
+
+.fa-angle-right
+{
+    margin-top: 4px;
+    margin-right: 8px;
+    float: right;
+}
+
+@media only screen and (max-width: 980px)
+{
+    .side-menu
+    {
+        width: 12rem;
+        z-index: 20;
+        top: 55px;
+        position: fixed;
+        font-size: 15px;
+        background: #30638E;
+    }
+
+    .side-menu ul li ul
+    {
+        top: 6px;
+    }
+
+    @media only screen and (max-width: 560px)
+    {
+        .side-menu
+        {
+            display: none;
+        }
+        .menu-bar
+        {
+            width: 100%;
+        }
+    }
+}
+
+/*--------------- Side Menu------------*/
